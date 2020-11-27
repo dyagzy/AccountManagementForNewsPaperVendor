@@ -10,6 +10,7 @@ namespace NewsPaperVendor
     {
         static void Main(string[] args)
         {
+            PrimitiveClasses.UserPrompt();
         }
 
     }
@@ -109,9 +110,6 @@ namespace NewsPaperVendor
 
             return totalSalesPerType;
 
-
-
-
         }
 
         /* calculates the total revenue per week of all the newspaper sold for that week*/
@@ -133,10 +131,6 @@ namespace NewsPaperVendor
             Console.WriteLine($"The maximum revenue per week is {maximumRevenue}");
             Console.WriteLine($"The minimum revenue per week is {minimumRevenue}");
             Console.WriteLine($"The average revenue per week is {averageRevenue}");
-
-
-
-
 
             return totalRevenuePerWeek;
         }

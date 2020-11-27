@@ -1,0 +1,7 @@
+C:\Users\DanielOyagha\Documents\DotNetClassTheBulb\DotNetAssignmentCodeFiles\NewsPaperVendorApp\NewsPaperVendor\bin\Debug\NewsPaperVendor.exe.config
+C:\Users\DanielOyagha\Documents\DotNetClassTheBulb\DotNetAssignmentCodeFiles\NewsPaperVendorApp\NewsPaperVendor\bin\Debug\NewsPaperVendor.exe
+C:\Users\DanielOyagha\Documents\DotNetClassTheBulb\DotNetAssignmentCodeFiles\NewsPaperVendorApp\NewsPaperVendor\bin\Debug\NewsPaperVendor.pdb
+C:\Users\DanielOyagha\Documents\DotNetClassTheBulb\DotNetAssignmentCodeFiles\NewsPaperVendorApp\NewsPaperVendor\obj\Debug\NewsPaperVendor.csprojAssemblyReference.cache
+C:\Users\DanielOyagha\Documents\DotNetClassTheBulb\DotNetAssignmentCodeFiles\NewsPaperVendorApp\NewsPaperVendor\obj\Debug\NewsPaperVendor.csproj.CoreCompileInputs.cache
+C:\Users\DanielOyagha\Documents\DotNetClassTheBulb\DotNetAssignmentCodeFiles\NewsPaperVendorApp\NewsPaperVendor\obj\Debug\NewsPaperVendor.exe
+C:\Users\DanielOyagha\Documents\DotNetClassTheBulb\DotNetAssignmentCodeFiles\NewsPaperVendorApp\NewsPaperVendor\obj\Debug\NewsPaperVendor.pdb
