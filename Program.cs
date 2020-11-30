@@ -10,8 +10,8 @@ namespace NewsPaperVendor
     {
         static void Main(string[] args)
         {
-            PrimitiveClasses.UserPrompt();
-            //PrimitiveClass2.WelcomeUser();
+            //PrimitiveClasses.UserPrompt();
+            PrimitiveClass2.WelcomeUser();
 
 
         }
