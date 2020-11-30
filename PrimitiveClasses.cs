@@ -8,6 +8,7 @@ namespace NewsPaperVendor
 {
     public class PrimitiveClasses
     {
+        /* This is  not the right solution sir, see PrimitiveClasses2 for the final solution*/
         public static void  UserPrompt()
         {
             Console.WriteLine("How many types of newspapers do you sell?");

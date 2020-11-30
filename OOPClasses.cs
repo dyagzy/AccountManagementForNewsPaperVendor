@@ -8,6 +8,7 @@ namespace NewsPaperVendor
 {
     public class OOPClasses
     {
+        /* Here I used the concept of OOP To Implement the Vendor Managemt System, Although I didnt finish it, I hope to complete it later again*/
 
 
         public class NewsPaperWeeklyRecord
