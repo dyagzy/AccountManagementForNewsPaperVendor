@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Amaka.cs" />
     <Compile Include="OOPClasses.cs" />
     <Compile Include="PrimitiveClass2.cs" />
     <Compile Include="PrimitiveClasses.cs" />

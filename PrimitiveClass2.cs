@@ -16,6 +16,10 @@ namespace NewsPaperVendor
             int qty;
             decimal price;
             decimal sales = 0;
+            decimal pmNewssales= 0;
+            decimal punchSales = 0;
+            decimal gurdianSales = 0;
+            decimal theSunsales = 0;
             decimal maximumSales;
             decimal minimumSales;
             decimal averageSales;
@@ -75,7 +79,7 @@ namespace NewsPaperVendor
                                             string pricePerWeek = Console.ReadLine();
                                             price = decimal.Parse(pricePerWeek);
                                             sales = qty * price;
-                                            sales += sales; //logic not correct yet
+                                            pmNewssales += sales; //logic not correct yet
 
                                             salesListPmNews.Add(sales);
 
@@ -86,7 +90,9 @@ namespace NewsPaperVendor
                                     maximumSales = salesListPmNews.Max();
                                     minimumSales = salesListPmNews.Min();
                                     averageSales = salesListPmNews.Average();
-                                    Console.WriteLine($" The total sales of PMNews is {sales} ");
+                                    Console.WriteLine($" The total sales of PMNews is {pmNewssales} ");
+                                    Console.WriteLine($" The first sales of PMNews for position 0 is : {salesListPmNews[0]} ");
+                                    Console.WriteLine($" The total sales of PMNews for position 1 is : {salesListPmNews[1]} ");
                                     Console.WriteLine($" The maximum sales of PMNews is {maximumSales} ");
                                     Console.WriteLine($" The minimum sales of PMNews is {minimumSales} ");
                                     Console.WriteLine($" The average sales of PMNews is {averageSales} ");
@@ -110,7 +116,7 @@ namespace NewsPaperVendor
                                             string pricePerWeek = Console.ReadLine();
                                             price = decimal.Parse(pricePerWeek);
                                             sales = qty * price;
-                                            sales += sales;
+                                            gurdianSales += sales;
 
                                             salesListGuardian.Add(sales);
 
@@ -120,7 +126,9 @@ namespace NewsPaperVendor
                                     maximumSales = salesListGuardian.Max();
                                     minimumSales = salesListGuardian.Min();
                                     averageSales = salesListGuardian.Average();
-                                    Console.WriteLine($" The total sales of PMNews is {sales} ");
+                                    Console.WriteLine($" The total sales of PMNews is {gurdianSales} ");
+                                    Console.WriteLine($" The first sales of PMNews for position 0 is : {salesListGuardian[0]} ");
+                                    Console.WriteLine($" The total sales of PMNews for position 1 is : {salesListGuardian[1]} ");
                                     Console.WriteLine($" The maximum sales of PMNews is {maximumSales} ");
                                     Console.WriteLine($" The minimum sales of PMNews is {minimumSales} ");
                                     Console.WriteLine($" The average sales of PMNews is {averageSales} ");
@@ -142,7 +150,7 @@ namespace NewsPaperVendor
                                             string pricePerWeek = Console.ReadLine();
                                             price = decimal.Parse(pricePerWeek);
                                             sales = qty * price;
-                                            sales += sales;
+                                            punchSales += sales;
 
                                             salesListPunch.Add(sales);
 
@@ -152,7 +160,9 @@ namespace NewsPaperVendor
                                     maximumSales = salesListPunch.Max();
                                     minimumSales = salesListPunch.Min();
                                     averageSales = salesListPunch.Average();
-                                    Console.WriteLine($" The total sales of PMNews is {sales} ");
+                                    Console.WriteLine($" The total sales of PMNews is {punchSales} ");
+                                    Console.WriteLine($" The first sales of PMNews for position 0 is : {salesListPunch[0]} ");
+                                    Console.WriteLine($" The total sales of PMNews for position 1 is : {salesListPunch[1]} ");
                                     Console.WriteLine($" The maximum sales of PMNews is {maximumSales} ");
                                     Console.WriteLine($" The minimum sales of PMNews is {minimumSales} ");
                                     Console.WriteLine($" The average sales of PMNews is {averageSales} ");
@@ -176,7 +186,7 @@ namespace NewsPaperVendor
                                             string pricePerWeek = Console.ReadLine();
                                             price = decimal.Parse(pricePerWeek);
                                             sales = qty * price;
-                                            sales += sales;
+                                            theSunsales += sales;
 
                                             salesListSun.Add(sales);
 
@@ -185,7 +195,9 @@ namespace NewsPaperVendor
                                     maximumSales = salesListSun.Max();
                                     minimumSales = salesListSun.Min();
                                     averageSales = salesListSun.Average();
-                                    Console.WriteLine($" The total sales of PMNews is {sales} ");
+                                    Console.WriteLine($" The total sales of PMNews is {theSunsales} ");
+                                    Console.WriteLine($" The first sales of PMNews for position 0 is : {salesListSun[0]} ");
+                                    Console.WriteLine($" The total sales of PMNews for position 1 is : {salesListSun[1]} ");
                                     Console.WriteLine($" The maximum sales of PMNews is {maximumSales} ");
                                     Console.WriteLine($" The minimum sales of PMNews is {minimumSales} ");
                                     Console.WriteLine($" The average sales of PMNews is {averageSales} ");
@@ -225,8 +237,37 @@ namespace NewsPaperVendor
                         Console.WriteLine(" Please enter your Phone number below");
                         string newUserRegPhone = Console.ReadLine();
                         Console.WriteLine(" Please enter at least one newspaper name from the list belowe that you would like to sell");
-                        Console.WriteLine("**PM News NewsPaper\n**Punch NewsPaper\n**The Sun Newspaper\n**Guardian Newspaper"); Console.WriteLine();
+                        Console.WriteLine("**PM News NewsPaper\n**Punch NewsPaper\n**The Sun Newspaper\n**Guardian Newspaper \nIf you preferred newspaper is not on the list displayed above then, type YES in capital letters to register you preferred newspapers"); Console.WriteLine();
                         string newUserRegNewsPaperName = Console.ReadLine();
+
+                        //Allows new vendor to register different sets of newspaper not already on the list of what we are selling
+                        if (newUserRegNewsPaperName == "YES")
+                        {
+                            Console.WriteLine("We are happy to have you here as a new newspaper vendor that wants to sell a different type of newspaper from the ones we are already selling at Doshen International");
+                            Console.WriteLine( "please tell us how many new type of newspaper you want to sell?");
+                            string newNewsPaperListNo = Console.ReadLine();
+                            int newNewsPaperListNoInt = int.Parse(newNewsPaperListNo);
+                            //creates an array based on the number of the new type of newspaper the new vendor wants ti start selling
+                            
+                            string[] listOfnewNewsPaper = new string[newNewsPaperListNoInt];
+                            Console.WriteLine("Enter the names of the new type of newspapers you want to sell");
+                            string NewnewsPaperNames = Console.ReadLine();
+                            for (int i = 0; i < listOfnewNewsPaper.Length; i++)
+                            {
+                                listOfnewNewsPaper[i] = Convert.ToString(Console.ReadLine());
+
+
+                            }
+
+                            foreach (var item in listOfnewNewsPaper)
+                            {
+                                Console.WriteLine(item);    
+                            }
+
+                           
+
+                        }
+                       
                         Console.ReadLine();
                         //string [] newUserRegNewsPaperNameArray =  new string [] ()newUserRegNewsPaperName.ToArray<string>();
                     }
